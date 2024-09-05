@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive Data Types</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="focus">
+
+    <h2>Math Properties and Methods</h2>
+
+    <!-- MATH OBJECT -->
+  <!-- 1. Adjusting Element Sizes -->
+  <section>
+    <h3>Adjusting Element Sizes</h3>
+    <p>Original Width: 800px</p>
+    <label for="resizePercentage">Resize Percentage (e.g., 75 for 75%):</label>
+    <input type="number" id="resizePercentage" placeholder="Enter percentage">
+    <br>
+    <button type="button" onclick="adjustSize()">Calculate New Width</button>
+    <p id="newSizeMessage"></p>
+</section>
+
+<!-- 2. Picking a Random Color -->
+<section>
+    <h3>Picking a Random Color</h3>
+    <button type="button" onclick="changeBackgroundColor()">Change Background Color</button>
+    <p id="colorMessage">Click the button to change the background color to a random shade of gray.</p>
+</section>
+
+<!-- 3. Calculating the Price of Things -->
+<section>
+    <h3>Calculating the Price of Things</h3>
+    <label for="itemPrice">Item Price ($):</label>
+    <input type="number" id="itemPrice" placeholder="Enter price per item" step="0.01">
+    <br>
+    <label for="itemQuantity">Quantity:</label>
+    <input type="number" id="itemQuantity" placeholder="Enter quantity">
+    <br>
+    <label for="discountPercentage">Discount Percentage (e.g., 10 for 10%):</label>
+    <input type="number" id="discountPercentage" placeholder="Enter discount percentage">
+    <br>
+    <button type="button" onclick="calculateTotalPrice()">Calculate Total Price</button>
+    <p id="priceMessage"></p>
+</section>
+
+  </section>
+
+  
+
+  <section class="focus">
+
+    <h2>Number Property and Methods</h2>
+
+       <!-- NUMBERS -->
+
+     <!-- 1. User Input Validation -->
+     <section>
+        <h3>User Input Validation</h3>
+        <label for="ageInput">Enter your age:</label>
+        <input type="text" id="ageInput" placeholder="Enter a number">
+        <br>
+        <button type="button" onclick="validateAge()">Validate Age</button>
+        <p id="validationMessage"></p>
+    </section>
+
+    <!-- 2. Displaying Prices in a Consistent Format -->
+    <section>
+        <h3>Displaying Prices in a Consistent Format</h3>
+        <label for="priceInput">Enter the product price:</label>
+        <input type="number" id="priceInput" placeholder="Enter price" step="0.01">
+        <br>
+        <button type="button" onclick="formatPrice()">Format Price</button>
+        <p id="priceFormatMessage"></p>
+    </section>
+
+    <!-- 3. Detecting Invalid Number Inputs -->
+    <section>
+        <h3>Detecting Invalid Number Inputs</h3>
+        <label for="numberInput">Enter a number:</label>
+        <input type="text" id="numberInput" placeholder="Enter a value">
+        <br>
+        <button type="button" onclick="detectInvalidInput()">Detect Invalid Input</button>
+        <p id="invalidInputMessage"></p>
+    </section>
+
+  </section>
+
+ 
+<section class="focus">
+
+    <h2>String Properties and Methods</h2>
+
+        <!-- STRINGS -->
+     <!-- 1. Greet Users By Name -->
+     <section>
+        <h3>Greet Users By Name</h3>
+        <label for="fullNameInput">Enter your full name:</label>
+        <input type="text" id="fullNameInput" placeholder="Enter your full name">
+        <br>
+        <button type="button" onclick="greetUser()">Greet Me</button>
+        <p id="greetingMessage"></p>
+    </section>
+
+    <!-- 2. Formatting User Input -->
+    <section>
+        <h3>Formatting User Input</h3>
+        <label for="emailInput">Enter your email address:</label>
+        <input type="text" id="emailInput" placeholder="Enter your email">
+        <br>
+        <button type="button" onclick="formatEmail()">Format Email</button>
+        <p id="emailMessage"></p>
+    </section>
+
+    <!-- 3. Trimming Unwanted Spaces -->
+    <section>
+        <h3>Trimming Unwanted Spaces</h3>
+        <label for="inputWithSpaces">Enter some text with spaces:</label>
+        <input type="text" id="inputWithSpaces" placeholder="Enter text with spaces">
+        <br>
+        <button type="button" onclick="trimSpaces()">Trim Spaces</button>
+        <p id="trimMessage"></p>
+    </section>
+
+
+</section>
+
+
+
+<section class="focus">
+
+    <h2>Boolean Properties and Methods</h2>
+
+    <!-- BOOLEANS -->
+
+    <!-- 1. Form Submission Validation -->
+    <section>
+        <h3>Form Submission Validation</h3>
+        <form id="subscriptionForm">
+            <label for="agreeCheckbox">
+                <input type="checkbox" id="agreeCheckbox"> I agree to the terms and conditions
+            </label>
+            <br>
+            <button type="button" onclick="validateCheckbox()">Submit</button>
+            <p id="checkboxMessage"></p>
+        </form>
+    </section>
+
+    <!-- 2. Login Button State -->
+    <section>
+        <h3>Login Button State</h3>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <br>
+            <button type="button" id="loginButton" disabled>Login</button>
+        </form>
+    </section>
+
+    <!-- 3. Toggle Visibility -->
+    <section>
+        <h3>Toggle Visibility</h3>
+        <button type="button" onclick="toggleVisibility()">Toggle Section</button>
+        <div id="toggleSection" style="display:none;">
+            <p>This section is toggled by the button.</p>
+        </div>
+    </section>
+
+    <!-- 4. Confirmation Before Deletion -->
+    <section>
+        <h3>Confirmation Before Deletion</h3>
+        <button type="button" onclick="confirmDeletion()">Delete Item</button>
+        <p id="deleteMessage"></p>
+    </section>
+
+</section>
+
+
+</body>
+</html>
